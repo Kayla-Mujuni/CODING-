@@ -1,0 +1,7 @@
+/* calling an id */
+/* IDs are never duplicated */
+#main{
+background-color: cyan;
+width: 900px;
+height: 1000px;
+}

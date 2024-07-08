@@ -1,7 +1,12 @@
 /* calling an id */
 /* IDs are never duplicated */
 #main{
-background-color: cyan;
+background-color: white;
 width: 900px;
 height: 1000px;
+}
+#area1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-weight: bold;
 }

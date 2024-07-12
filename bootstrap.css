@@ -1,0 +1,11 @@
+.carousel{
+    height: 500px;
+    margin-bottom:10px;
+}
+.flexbox{
+    height: 500px ;
+    background-color:#e9131e;
+    /* starting to use flexbox */
+    display:flex;
+    justify-content:space-between;
+}

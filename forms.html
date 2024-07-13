@@ -4,31 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make your order</title>
+    <link rel="stylesheet" href="forms.css">
 </head>
 <body>
     <div class="main">
         <div class="form">
-            <form action="">
+            <form action="" id="form">
+                <!-- enter your name -->
+                <div class="order-option">
                 <label for="">
                     Name
                 </label>
                 <input type="text" placeholder="Enter your name" required> 
+            </div>
+            <!-- enter your phone no. -->
+             <div class="order-option">
                 <Label>
                     Phone number
                 </Label>
                 <input type="tel" name="phone" required> 
-            <label for="">
-                What is your order?
-            </label>
-            <select name="Order" id="Order">
-                <option value="Spirits">Spirits </option>
-                <option value="Cocktails">Cocktails</option>
-                <option value="Water">Water</option>
-                <option value="Smooothies and milk shakes">Smooothies and milk shakes</option>
-                <option value="Hot beverages">Hot beverages</option>
-                <option value="Iced Teas">Iced Teas</option>
-                <option value="Soft drinks">Soft drinks</option>
-            </select>
+            </div>
+            <!-- what is your order -->
+             <div class="order-option">
+
+            <label for="">Select your drink(s)</label>
+
+            <div class="menu-option">
+            <input type="checkbox" value="Beverages"> 
+            <label for="">Beverages  </label>
+            </div>
+
+            <div class="menu-option">
+                <input type="checkbox" value="Beverages"> 
+                <label for="">Beverages  </label>
+                </div>
+
+                <div class="menu-option">
+                    <input type="checkbox" value="Hotchocolate"> 
+                    <label for="">Hot chocolate  </label>
+                    </div>
+
+                    <div class="menu-option">
+                        <input type="checkbox" value="Iced tea "> 
+                        <label for="">Iced Tea  </label>
+                        </div>
+
+           
+
+        </div>
             </form>
 
         </div>

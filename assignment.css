@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/* background-color: bisque; */
+    height: 600px;
+    ;
+}
+.details{
+    padding: 10px;
+    border: 2px solid black; 
+    border-radius: 10px;
+    margin: 5px;
+
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.form{
+    background-color: rgb(241, 188, 88);
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid salmon;
+    margin-bottom: 20px;
+}
+.back{
+    display: flex;
+    justify-content: center;
+
+}

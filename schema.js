@@ -1,16 +1,17 @@
 // import mongoose
-const  mongoose = require (" mongoose")
- const orderSchema = new mongoose.Schema (  {
+const  mongoose = require ("mongoose")
+ const orderSchema = new mongoose.Schema({
 name:{
     type:String,
     required:true
 },
+
 email:{
-    type:string 
+    type:String 
 },
 
 phoneNumber:{
-    type:string,
+    type:String,
     required:true
 },
 

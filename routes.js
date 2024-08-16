@@ -14,8 +14,29 @@ catch(err){
 res.json({err})
 }
      })
+    //  Get a specific order
+    router.get('/:orderId', async(req,res)=>{
+        try{
+            const specificOrder= await orders.findById(req.params.orderId)
+                res.json(specificOrder)
+        }
+        catch(err){
+            res.json({err})
+        }
+    })
 
-
+    // delete method 
+    router.delete ('/delete/:orderID', async (req,res)=>{
+        try{
+    
+     const deletedPost = await orders.deleteOne({_id:req.params.orderID})
+    res.json(deletedPost)
+    }
+    catch(err){ 
+        res.json({mssg:err.message})
+    }
+       } )
+    
 //  the asynchronous approach 
 router.post ('/sendOrder',async(req, res)=>{
     const order = new orders({
@@ -43,10 +64,29 @@ const order = new orders({
      phoneNumber:req.body.phoneNumber
 
 })
+
 order.save()
 .then(data=>{res.json(data)})
 .catch(err=>{res.json({mss:err})})
 
 } )
+// UPDATE METHOD 
+router.patch('/update/:orderID' , async(req,res)=>{
+try{
+    const updatedOrder = await orders.updateOne({_id:req.params.orderID},{$set:{name:req.body.name}})
+    res.json(updatedOrder)
+}
+catch(err){
+    res.json({mssg:err.message})
+}
+})
+
+// function variable (){
+// }
+// const variable =()=>{}
+// ()=>{}
+
+
+
 
     module.exports = router
